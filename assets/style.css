@@ -1,0 +1,78 @@
+/* 全站基本設定 */
+body {
+  font-family: 'Microsoft JhengHei', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* 頁首區塊 */
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+/* 按鈕橫排區塊，貼齊 header 底部，寬度與頁面相同 */
+.button-bar.horizontal {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 每個按鈕佔滿可用空間（平均分配） */
+.button-bar.horizontal .link-button {
+  flex: 1;
+  background-color: #4dc9b8;
+  color: white;
+  padding: 16px 0;
+  border: none;
+  border-radius: 0;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+/* 懸停時浮動效果 */
+.button-bar.horizontal .link-button:hover {
+  background-color: #357ab8;
+  transform: translateY(-3px);
+}
+
+/* 主要內容區塊 */
+section {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* 標題樣式 */
+h2 {
+  color: #4a90e2;
+}
+
+/* 超連結樣式 */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 強調名字的樣式 */
+strong.name-highlight {
+  color: #4a90e2;
+  font-size: 1.2em;
+}
